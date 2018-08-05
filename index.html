@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Places Search Box</title>
+    <link href="https://fonts.googleapis.com/css?family=Modern+Antiqua|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <Header>  
+          <nav>
+              <div class="nav-wrapper">
+                   <a href="#" class="brand-logo center">FOOD-MAP</a>
+                 </div>
+               </nav>
+         </Header> 
+
+    <input id="pac-input" class="controls input-field" type="text" placeholder="Busca un restaurant">
+    <div id="map"></div>
+    <div id="message"></div>
+   
+    <script src="map.js"></script>  
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5csHGxd6sU8h_crBYJ9ggRyHF9GqVOPI&libraries=places&callback=getLocation"
+         async defer></script>
+  </body>
+</html>
