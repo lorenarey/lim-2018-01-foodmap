@@ -3,7 +3,7 @@ function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(initAutocomplete);
     } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
+        message.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
 
@@ -60,6 +60,10 @@ function initAutocomplete(position) {
           scaledSize: new google.maps.Size(25, 25)
         };
 
+        
+        
+
+        
         // Crea un marcador para cada lugar.
         markers.push(new google.maps.Marker({
           map: map,
@@ -78,3 +82,16 @@ function initAutocomplete(position) {
       map.fitBounds(bounds);
     });
   }
+
+  var cardsInfo = (place) => {
+   
+    places.forEach(function(place) {
+      ;
+    });
+   
+}
+  // places.forEach((place)=>{
+  //   nameCohorts=cohort.id;
+    
+  //       places.innerHTML += `<option value ="${nameCohorts}">${nameCohorts}</option>`        
+  //   }
